@@ -2,6 +2,10 @@
 
 This project is a local-first, offline-capable question answering system for personal document collections. It combines lexical BM25-style ranking with semantic embeddings, stores documents and chunks persistently in SQLite, and only returns answers grounded in retrieved passages with citations.
 
+#Abstract
+The rapid growth of digital documents across academic, research, and organizational domains has made efficient information retrieval increasingly challenging. Traditional keyword-based search systems rely on exact word matching and fail to capture the semantic meaning of user queries, often resulting in irrelevant or incomplete results. This forces users to manually search through large volumes of text, reducing productivity and increasing the effort required to find accurate information. Recent advancements in artificial intelligence have introduced modern Question Answering (QA) systems that improve contextual understanding using large language models. However, most of these systems depend on cloud-based services and proprietary APIs, which raise concerns regarding data privacy, lack of transparency, high operational costs, and continuous internet dependency.
+To overcome these limitations, this project proposes an offline Retrieval-Augmented Generation (RAG)-based Question Answering system. The system integrates semantic embeddings, BM25 lexical ranking, and CHORMADB-based vector indexing to retrieve relevant information and generate accurate, context-aware answers grounded in documents. It also provides source citations, multi-document support, and explainable ranking mechanisms. These features ensure transparency, reliability, and data security, making the system suitable for academic, research, and enterprise environments requiring privacy-preserving and efficient information retrieval.
+
 ## Features
 
 - Offline document ingestion for `.txt`, `.md`, `.pdf`, and `.docx`
